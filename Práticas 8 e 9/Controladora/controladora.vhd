@@ -22,12 +22,6 @@ begin
     process (state)
     begin
         -- Default assignments
-        Fio_Load_E <= '0';
-        Fio_Reset_MA <= '0';
-        Fio_Descendo <= '0';
-        Fio_Subindo <= '0';
-        Fio_Atualizar <= '0';
-
         case state is
             when s0 =>
                 next_state <= s1;
@@ -38,6 +32,9 @@ begin
                 Fio_Subindo <= '1';
 
             when s1 =>
+				    Fio_Load_E <= '0';
+					 Fio_Reset_MA <= '0';
+					 Fio_Atualizar <= '0';	
                 if Fio_Maior = '1' then
                     next_state <= s2;
                 elsif Fio_Menor = '1' then

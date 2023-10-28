@@ -3,75 +3,77 @@ K3
 13
 cModel Technology
 Z0 dC:\Users\dudah\OneDrive\Área de Trabalho\UFMG\Lab Sistemas Digitais\Pratica8e9\LAB_SD\Práticas 8 e 9\Sinalizador\simulation\modelsim
-Eregistrador
-Z1 w1698501524
-Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
-Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z4 dC:\Users\dudah\OneDrive\Área de Trabalho\UFMG\Lab Sistemas Digitais\Pratica8e9\LAB_SD\Práticas 8 e 9\Sinalizador\simulation\modelsim
-Z5 8C:/Users/dudah/OneDrive/Área de Trabalho/UFMG/Lab Sistemas Digitais/Pratica8e9/LAB_SD/Práticas 8 e 9/RegW/registrador.vhd
-Z6 FC:/Users/dudah/OneDrive/Área de Trabalho/UFMG/Lab Sistemas Digitais/Pratica8e9/LAB_SD/Práticas 8 e 9/RegW/registrador.vhd
+Emean_4_clocks
+Z1 w1698507978
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\dudah\OneDrive\Área de Trabalho\UFMG\Lab Sistemas Digitais\Pratica8e9\LAB_SD\Práticas 8 e 9\Sinalizador\simulation\modelsim
+Z6 8C:/Users/dudah/OneDrive/Área de Trabalho/UFMG/Lab Sistemas Digitais/Pratica8e9/LAB_SD/Práticas 8 e 9/Reg_MA/mean_4_clocks.vhd
+Z7 FC:/Users/dudah/OneDrive/Área de Trabalho/UFMG/Lab Sistemas Digitais/Pratica8e9/LAB_SD/Práticas 8 e 9/Reg_MA/mean_4_clocks.vhd
 l0
-L4
-Ve03K9zTQTizUa?P>m=^e42
-Z7 OV;C;10.1d;51
+L5
+V]c8n30J?OJaFU9^G1fF3Z2
+Z8 OV;C;10.1d;51
 31
-Z8 !s108 1698501585.738000
-Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/dudah/OneDrive/Área de Trabalho/UFMG/Lab Sistemas Digitais/Pratica8e9/LAB_SD/Práticas 8 e 9/RegW/registrador.vhd|
-Z10 !s107 C:/Users/dudah/OneDrive/Área de Trabalho/UFMG/Lab Sistemas Digitais/Pratica8e9/LAB_SD/Práticas 8 e 9/RegW/registrador.vhd|
-Z11 o-93 -work work -O0
-Z12 tExplicit 1
-!s100 Qf<FFf_J5a@KIV7eH:IE>2
+Z9 !s108 1698508487.226000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/dudah/OneDrive/Área de Trabalho/UFMG/Lab Sistemas Digitais/Pratica8e9/LAB_SD/Práticas 8 e 9/Reg_MA/mean_4_clocks.vhd|
+Z11 !s107 C:/Users/dudah/OneDrive/Área de Trabalho/UFMG/Lab Sistemas Digitais/Pratica8e9/LAB_SD/Práticas 8 e 9/Reg_MA/mean_4_clocks.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 iJe4M<:WggVYIA^YGL4gH0
 !i10b 1
-Artl
+Aarch
 R2
 R3
-DEx4 work 11 registrador 0 22 e03K9zTQTizUa?P>m=^e42
-l20
-L18
-ViUSm92=O2ZX7HdDXT2jnc3
-R7
-31
+R4
+DEx4 work 13 mean_4_clocks 0 22 ]c8n30J?OJaFU9^G1fF3Z2
+l16
+L15
+V8bB@O5?nUi;TEmUMWI3W[2
 R8
+31
 R9
 R10
 R11
 R12
-!s100 eDcCSk3I0DDb?1e]SSX:80
+R13
+!s100 EdP0_Q9>345;6F[YAbNnT1
 !i10b 1
-Etb_registrador
-Z13 w1698501167
-Z14 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Etb_mean_4_clocks
+Z14 w1698508207
 R2
 R3
 R4
-Z15 8C:/Users/dudah/OneDrive/Área de Trabalho/UFMG/Lab Sistemas Digitais/Pratica8e9/LAB_SD/Práticas 8 e 9/Sinalizador/../RegW/tb_registrador.vhd
-Z16 FC:/Users/dudah/OneDrive/Área de Trabalho/UFMG/Lab Sistemas Digitais/Pratica8e9/LAB_SD/Práticas 8 e 9/Sinalizador/../RegW/tb_registrador.vhd
+R5
+Z15 8C:/Users/dudah/OneDrive/Área de Trabalho/UFMG/Lab Sistemas Digitais/Pratica8e9/LAB_SD/Práticas 8 e 9/Sinalizador/../Reg_MA/tb_mean_4_clocks.vhd
+Z16 FC:/Users/dudah/OneDrive/Área de Trabalho/UFMG/Lab Sistemas Digitais/Pratica8e9/LAB_SD/Práticas 8 e 9/Sinalizador/../Reg_MA/tb_mean_4_clocks.vhd
 l0
 L5
-V1828jlIn]lFPl<K1[KnfA2
-!s100 m:15PmZBl24ZljM`UK`>O2
-R7
+VEVD0_RmhoWMRCGcMdO9HJ1
+!s100 d0ozn8Af9l[1nhJE?gWh40
+R8
 31
 !i10b 1
-Z17 !s108 1698501585.823000
-Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/dudah/OneDrive/Área de Trabalho/UFMG/Lab Sistemas Digitais/Pratica8e9/LAB_SD/Práticas 8 e 9/Sinalizador/../RegW/tb_registrador.vhd|
-Z19 !s107 C:/Users/dudah/OneDrive/Área de Trabalho/UFMG/Lab Sistemas Digitais/Pratica8e9/LAB_SD/Práticas 8 e 9/Sinalizador/../RegW/tb_registrador.vhd|
-R11
+Z17 !s108 1698508487.349000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/dudah/OneDrive/Área de Trabalho/UFMG/Lab Sistemas Digitais/Pratica8e9/LAB_SD/Práticas 8 e 9/Sinalizador/../Reg_MA/tb_mean_4_clocks.vhd|
+Z19 !s107 C:/Users/dudah/OneDrive/Área de Trabalho/UFMG/Lab Sistemas Digitais/Pratica8e9/LAB_SD/Práticas 8 e 9/Sinalizador/../Reg_MA/tb_mean_4_clocks.vhd|
 R12
-Atestbench
-R14
+R13
+Ateste
 R2
 R3
-DEx4 work 14 tb_registrador 0 22 1828jlIn]lFPl<K1[KnfA2
-l27
+R4
+DEx4 work 16 tb_mean_4_clocks 0 22 EVD0_RmhoWMRCGcMdO9HJ1
+l26
 L8
-V?9A^RnFLUdnm^hiVi4n>_0
-!s100 bfH]HYEUcX0>[aRi^U5O23
-R7
+VY5GI0gR?dFK7QTOUCOkjA0
+!s100 G^Bec5VFH7O_iNTiRc8YS1
+R8
 31
 !i10b 1
 R17
 R18
 R19
-R11
 R12
+R13

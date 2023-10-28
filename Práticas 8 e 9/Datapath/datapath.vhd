@@ -5,17 +5,17 @@ entity datapath is
     port (
         E : in std_logic_vector(3 downto 0); -- Entrada E de 4 bits
 		  CLOCK: in std_logic;
-        Subindo_LED : out std_logic_vector(1 downto 0);
-        Descendo_LED : out std_logic_vector(1 downto 0);
-        MediaMovel_Display : out std_logic_vector(6 downto 0);
 		  Fio_Load_E: in std_logic;
 		  Fio_Reset_MA: in std_logic;
+		  Fio_Descendo: in std_logic_vector(1 downto 0);
+		  Fio_Subindo: in std_logic_vector(1 downto 0);
+		  Fio_Atualizar: in std_logic;
 		  Fio_Maior: out std_logic;
 		  Fio_Igual: out std_logic;
 		  Fio_Menor: out std_logic;
-		  Fio_Descendo: in std_logic_vector(1 downto 0);
-		  Fio_Subindo: in std_logic_vector(1 downto 0);
-		  Fio_Atualizar: in std_logic
+		  Subindo_LED : out std_logic_vector(1 downto 0);
+        Descendo_LED : out std_logic_vector(1 downto 0);
+        MediaMovel_Display : out std_logic_vector(6 downto 0)
     );
 end datapath;
 
@@ -108,10 +108,11 @@ begin
 			Q => Fio_Valor_Atual
 		 );
 
-   BCD: BCD_7seg port map (
+   BCD: BCD_7seg 
+		port map (
         entrada => MediaMovel,
 		  saida => MediaMovel_Display
-    );
+		);
 	 
 	Subindo: registrador
     generic map (

@@ -14,7 +14,7 @@ end mean_4_clocks;
 
 architecture arch of mean_4_clocks is
 begin
-    process(INPUT) is
+    process(RESET, INPUT) is
         variable var1 : unsigned(W - 1 downto 0);
         variable var2 : unsigned(W - 1 downto 0);
         variable var3 : unsigned(W - 1 downto 0);
@@ -26,13 +26,14 @@ begin
             var2 := to_unsigned(0,W);
             var3 := to_unsigned(0,W);
             var4 := to_unsigned(0,W);
-        else 
+        else
             var4 := var3;
             var3 := var2;
             var2 := var1;
             var1 := unsigned(INPUT(W-1 downto 0));
         end if;
-		  sum := ("00" & var1) + ("00" & var2) + ("00" & var3) + ("00" &var4);
+		  
+		  sum := ("00" & var1) + ("00" & var2) + ("00" & var3) + ("00" & var4);
         OUTPUT <= std_logic_vector(sum(W + 1 downto 2) srl 2);
     end process;
 end arch;

@@ -25,9 +25,12 @@
 *.html
 
 # Diretórios de síntese
-**/output_files/
-**/db/
-**/simulation/
+Sinalizador/output_files/
+Sinalizador/db/
+Sinalizador/simulation/modelsim
+Datapath/output_files/
+Datapath/db/
+Datapath/simulation/modelsim
 # Arquivos de compilação e síntese
 *.cdb
 *.hdb
