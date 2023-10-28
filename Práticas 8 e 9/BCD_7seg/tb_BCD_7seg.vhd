@@ -16,7 +16,11 @@ architecture sim of tb_BCD_7seg is
   end component;
 
 begin
-  UUT: BCD_7seg port map (entrada_tb, saida_tb);
+  UUT: BCD_7seg 
+  port map (
+	entrada => entrada_tb, 
+	saida => saida_tb
+	);
 
   -- Estímulos de teste
   test: process
