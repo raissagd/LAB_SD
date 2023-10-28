@@ -1,0 +1,19 @@
+|registrador
+reset => registro[0].ACLR
+reset => registro[1].ACLR
+reset => registro[2].ACLR
+reset => registro[3].ACLR
+clock => registro[0].CLK
+clock => registro[1].CLK
+clock => registro[2].CLK
+clock => registro[3].CLK
+D[0] => registro[0].DATAIN
+D[1] => registro[1].DATAIN
+D[2] => registro[2].DATAIN
+D[3] => registro[3].DATAIN
+Q[0] <= registro[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= registro[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= registro[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= registro[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

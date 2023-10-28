@@ -1,0 +1,75 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Hermes\MRP\Pratica8e9\Tudo\RegW\simulation\modelsim
+Eregistrador
+Z1 w1697846173
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Hermes\MRP\Pratica8e9\Tudo\RegW\simulation\modelsim
+Z5 8C:/Hermes/MRP/Pratica8e9/Tudo/RegW/registrador.vhd
+Z6 FC:/Hermes/MRP/Pratica8e9/Tudo/RegW/registrador.vhd
+l0
+L4
+VQRL4M7OoI;V;73GZSCYel3
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1697848997.624000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Hermes/MRP/Pratica8e9/Tudo/RegW/registrador.vhd|
+Z10 !s107 C:/Hermes/MRP/Pratica8e9/Tudo/RegW/registrador.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 EnNPUL2`FXLmUUCal=WIh3
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 11 registrador 0 22 QRL4M7OoI;V;73GZSCYel3
+l18
+L16
+V_W[hVda`B<n@25QBcSRRh1
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 jF1LHze7RT<eZ:R`kIfa`2
+!i10b 1
+Etb_registrador
+Z13 w1697848914
+R2
+R3
+R4
+Z14 8C:/Hermes/MRP/Pratica8e9/Tudo/RegW/tb_registrador.vhd
+Z15 FC:/Hermes/MRP/Pratica8e9/Tudo/RegW/tb_registrador.vhd
+l0
+L4
+VR6mYD16OVYVNDV@`LM2XY0
+!s100 Qfg<fI]MT]miTORhR1OlA1
+R7
+31
+!i10b 1
+Z16 !s108 1697848997.672000
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Hermes/MRP/Pratica8e9/Tudo/RegW/tb_registrador.vhd|
+Z18 !s107 C:/Hermes/MRP/Pratica8e9/Tudo/RegW/tb_registrador.vhd|
+R11
+R12
+Atb
+R2
+R3
+DEx4 work 14 tb_registrador 0 22 R6mYD16OVYVNDV@`LM2XY0
+l25
+L7
+VzDnlEQW6j<DJGzCR2]2nQ0
+!s100 [46HIZMJN3^h1AN2dUbAc1
+R7
+31
+!i10b 1
+R16
+R17
+R18
+R11
+R12
