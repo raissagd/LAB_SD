@@ -1,75 +1,57 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity sinalizador is
-    generic (
-        W : integer := 8
-    );
+entity Sinalizador is
     port (
-        E : in std_logic_vector(3 downto 0); -- Entrada E de 4 bits
-        CLOCK: in std_logic;
-        Subindo_LED : out std_logic_vector(1 downto 0);
-        Descendo_LED : out std_logic_vector(1 downto 0);
-        MediaMovel_Display : out std_logic_vector(6 downto 0);
-        Reset_MA: in std_logic
+        RESET : in std_logic;
+        E : in std_logic_vector(3 downto 0);
+        Subindo : out std_logic_vector(1 downto 0);
+        Descendo : out std_logic_vector(1 downto 0);
+        Display_7seg : out std_logic_vector(6 downto 0);
+        CLOCK : in std_logic
     );
-end entity sinalizador;
+end Sinalizador;
 
-architecture Main of sinalizador is
-
+architecture arch of Sinalizador is
+    signal Fio_Load_E, Fio_Reset_MA, Fio_Atualizar: std_logic;
     signal Fio_Maior, Fio_Igual, Fio_Menor: std_logic;
-    signal Fio_Load_E, Fio_Reset_MA, Fio_Descendo, Fio_Subindo, Fio_Atualizar: std_logic;
-
-    -- Instância dos componentes
-    component Controladora is
+    signal Fio_Descendo, Fio_Subindo: std_logic_vector(1 downto 0);
+    
+    component datapath
         port (
-            RESET: in std_logic; -- reset input
-            CLOCK: in std_logic; -- clock input
+            E : in std_logic_vector(3 downto 0);
+            CLOCK: in std_logic;
+            Subindo_LED : out std_logic_vector(1 downto 0);
+            Descendo_LED : out std_logic_vector(1 downto 0);
+            MediaMovel_Display : out std_logic_vector(6 downto 0);
+            Fio_Load_E: in std_logic;
+            Fio_Reset_MA: in std_logic;
+            Fio_Maior: out std_logic;
+            Fio_Igual: out std_logic;
+            Fio_Menor: out std_logic;
+            Fio_Descendo: in std_logic_vector(1 downto 0);
+            Fio_Subindo: in std_logic_vector(1 downto 0);
+            Fio_Atualizar: in std_logic
+        );
+    end component;
+    
+    component controladora
+        port(
+            RESET   : in    std_logic;
+            CLOCK   : in    std_logic;
             Fio_Maior, Fio_Igual, Fio_Menor: in std_logic;
             Fio_Load_E, Fio_Reset_MA, Fio_Descendo, Fio_Subindo, Fio_Atualizar: out std_logic
         );
     end component;
 
-    component Datapath is
-        generic (
-            W : integer := 4
-        );
-        port (
-            E: in std_logic_vector(3 downto 0); -- Entrada E de 4 bits
-            CLOCK: in std_logic;
-            Subindo_LED: out std_logic_vector(1 downto 0);
-            Descendo_LED: out std_logic_vector(1 downto 0);
-            MediaMovel_Display: out std_logic_vector(6 downto 0);
-            Fio_Load_E, Fio_Reset_MA: in std_logic;
-            Fio_Maior, Fio_Igual, Fio_Menor: out std_logic;
-            Fio_Descendo, Fio_Subindo, Fio_Atualizar: in std_logic
-        );
-    end component;
-
 begin
-    -- Instância do componente Controladora
-    Controladora_inst: Controladora
-    port map (
-        RESET => Fio_Reset_MA,
-        CLOCK => CLOCK,
-        Fio_Maior => Fio_Maior,
-        Fio_Igual => Fio_Igual,
-        Fio_Menor => Fio_Menor,
-        Fio_Load_E => Fio_Load_E,
-        Fio_Reset_MA => Fio_Reset_MA,
-        Fio_Descendo => Fio_Descendo,
-        Fio_Subindo => Fio_Subindo,
-        Fio_Atualizar => Fio_Atualizar
-    );
-
-    -- Instância do componente Datapath
-    Datapath_inst: Datapath
-    port map (
+    DPath: datapath
+    port map(
         E => E,
         CLOCK => CLOCK,
-        Subindo_LED => Subindo_LED,
-        Descendo_LED => Descendo_LED,
-        MediaMovel_Display => MediaMovel_Display,
+        Subindo_LED => Subindo,
+        Descendo_LED => Descendo,
+        MediaMovel_Display => Display_7seg,
         Fio_Load_E => Fio_Load_E,
         Fio_Reset_MA => Fio_Reset_MA,
         Fio_Maior => Fio_Maior,
@@ -80,4 +62,18 @@ begin
         Fio_Atualizar => Fio_Atualizar
     );
 
-end Main;
+    Ctrl: controladora
+    port map(
+        RESET => RESET,
+        CLOCK => CLOCK,
+        Fio_Maior => Fio_Maior,
+        Fio_Igual => Fio_Igual,
+        Fio_Menor => Fio_Menor,
+        Fio_Load_E => Fio_Load_E,
+        Fio_Reset_MA => Fio_Reset_MA,
+        Fio_Descendo => Fio_Descendo(1),
+        Fio_Subindo => Fio_Subindo(1),
+        Fio_Atualizar => Fio_Atualizar
+    );
+
+end arch;

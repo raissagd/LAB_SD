@@ -1,0 +1,229 @@
+|sinalizador
+RESET => controladora:Ctrl.RESET
+E[0] => datapath:DPath.E[0]
+E[1] => datapath:DPath.E[1]
+E[2] => datapath:DPath.E[2]
+E[3] => datapath:DPath.E[3]
+Subindo[0] <= datapath:DPath.Subindo_LED[0]
+Subindo[1] <= datapath:DPath.Subindo_LED[1]
+Descendo[0] <= datapath:DPath.Descendo_LED[0]
+Descendo[1] <= datapath:DPath.Descendo_LED[1]
+Display_7seg[0] <= datapath:DPath.MediaMovel_Display[0]
+Display_7seg[1] <= datapath:DPath.MediaMovel_Display[1]
+Display_7seg[2] <= datapath:DPath.MediaMovel_Display[2]
+Display_7seg[3] <= datapath:DPath.MediaMovel_Display[3]
+Display_7seg[4] <= datapath:DPath.MediaMovel_Display[4]
+Display_7seg[5] <= datapath:DPath.MediaMovel_Display[5]
+Display_7seg[6] <= datapath:DPath.MediaMovel_Display[6]
+CLOCK => datapath:DPath.CLOCK
+CLOCK => controladora:Ctrl.CLOCK
+
+
+|sinalizador|datapath:DPath
+E[0] => comparador:Comparador_instance.a[0]
+E[0] => registrador:Reg_E.D[0]
+E[1] => comparador:Comparador_instance.a[1]
+E[1] => registrador:Reg_E.D[1]
+E[2] => comparador:Comparador_instance.a[2]
+E[2] => registrador:Reg_E.D[2]
+E[3] => comparador:Comparador_instance.a[3]
+E[3] => registrador:Reg_E.D[3]
+CLOCK => mean_4_clocks:Reg_MA.CLK
+CLOCK => registrador:Reg_E.clock
+CLOCK => registrador:Subindo.clock
+CLOCK => registrador:Descendo.clock
+Subindo_LED[0] <= registrador:Subindo.Q[0]
+Subindo_LED[1] <= registrador:Subindo.Q[1]
+Descendo_LED[0] <= registrador:Descendo.Q[0]
+Descendo_LED[1] <= registrador:Descendo.Q[1]
+MediaMovel_Display[0] <= BCD_7seg:BCD.saida[0]
+MediaMovel_Display[1] <= BCD_7seg:BCD.saida[1]
+MediaMovel_Display[2] <= BCD_7seg:BCD.saida[2]
+MediaMovel_Display[3] <= BCD_7seg:BCD.saida[3]
+MediaMovel_Display[4] <= BCD_7seg:BCD.saida[4]
+MediaMovel_Display[5] <= BCD_7seg:BCD.saida[5]
+MediaMovel_Display[6] <= BCD_7seg:BCD.saida[6]
+Fio_Load_E => registrador:Reg_E.load
+Fio_Reset_MA => mean_4_clocks:Reg_MA.RESET
+Fio_Maior <= comparador:Comparador_instance.maior
+Fio_Igual <= comparador:Comparador_instance.igual
+Fio_Menor <= comparador:Comparador_instance.menor
+Fio_Descendo[0] => registrador:Descendo.D[0]
+Fio_Descendo[1] => registrador:Descendo.D[1]
+Fio_Subindo[0] => registrador:Subindo.D[0]
+Fio_Subindo[1] => registrador:Subindo.D[1]
+Fio_Atualizar => registrador:Subindo.enable
+Fio_Atualizar => registrador:Descendo.enable
+
+
+|sinalizador|datapath:DPath|mean_4_clocks:Reg_MA
+CLK => ~NO_FANOUT~
+RESET => var1[3].OUTPUTSELECT
+RESET => var1[2].OUTPUTSELECT
+RESET => var1[1].OUTPUTSELECT
+RESET => var1[0].OUTPUTSELECT
+RESET => var2[3].OUTPUTSELECT
+RESET => var2[2].OUTPUTSELECT
+RESET => var2[1].OUTPUTSELECT
+RESET => var2[0].OUTPUTSELECT
+RESET => var3[3].OUTPUTSELECT
+RESET => var3[2].OUTPUTSELECT
+RESET => var3[1].OUTPUTSELECT
+RESET => var3[0].OUTPUTSELECT
+RESET => var4[3].OUTPUTSELECT
+RESET => var4[2].OUTPUTSELECT
+RESET => var4[1].OUTPUTSELECT
+RESET => var4[0].OUTPUTSELECT
+INPUT[0] => var1[0].DATAA
+INPUT[1] => var1[1].DATAA
+INPUT[2] => var1[2].DATAA
+INPUT[3] => var1[3].DATAA
+OUTPUT[0] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+OUTPUT[1] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+OUTPUT[2] <= <GND>
+OUTPUT[3] <= <GND>
+
+
+|sinalizador|datapath:DPath|comparador:Comparador_instance
+a[0] => LessThan0.IN4
+a[0] => LessThan1.IN4
+a[0] => Equal0.IN3
+a[1] => LessThan0.IN3
+a[1] => LessThan1.IN3
+a[1] => Equal0.IN2
+a[2] => LessThan0.IN2
+a[2] => LessThan1.IN2
+a[2] => Equal0.IN1
+a[3] => LessThan0.IN1
+a[3] => LessThan1.IN1
+a[3] => Equal0.IN0
+b[0] => LessThan0.IN8
+b[0] => LessThan1.IN8
+b[0] => Equal0.IN7
+b[1] => LessThan0.IN7
+b[1] => LessThan1.IN7
+b[1] => Equal0.IN6
+b[2] => LessThan0.IN6
+b[2] => LessThan1.IN6
+b[2] => Equal0.IN5
+b[3] => LessThan0.IN5
+b[3] => LessThan1.IN5
+b[3] => Equal0.IN4
+maior <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+menor <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+igual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sinalizador|datapath:DPath|registrador:Reg_E
+reset => registro[0].ACLR
+reset => registro[1].ACLR
+reset => registro[2].ACLR
+reset => registro[3].ACLR
+clock => registro[0].CLK
+clock => registro[1].CLK
+clock => registro[2].CLK
+clock => registro[3].CLK
+load => registro.OUTPUTSELECT
+load => registro.OUTPUTSELECT
+load => registro.OUTPUTSELECT
+load => registro.OUTPUTSELECT
+enable => registro[3].ENA
+enable => registro[2].ENA
+enable => registro[1].ENA
+enable => registro[0].ENA
+D[0] => registro.DATAB
+D[1] => registro.DATAB
+D[2] => registro.DATAB
+D[3] => registro.DATAB
+Q[0] <= registro[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= registro[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= registro[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= registro[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sinalizador|datapath:DPath|Bcd_7seg:BCD
+entrada[0] => Mux0.IN19
+entrada[0] => Mux1.IN19
+entrada[0] => Mux2.IN19
+entrada[0] => Mux3.IN19
+entrada[0] => Mux4.IN19
+entrada[0] => Mux5.IN19
+entrada[0] => Mux6.IN19
+entrada[1] => Mux0.IN18
+entrada[1] => Mux1.IN18
+entrada[1] => Mux2.IN18
+entrada[1] => Mux3.IN18
+entrada[1] => Mux4.IN18
+entrada[1] => Mux5.IN18
+entrada[1] => Mux6.IN18
+entrada[2] => Mux0.IN17
+entrada[2] => Mux1.IN17
+entrada[2] => Mux2.IN17
+entrada[2] => Mux3.IN17
+entrada[2] => Mux4.IN17
+entrada[2] => Mux5.IN17
+entrada[2] => Mux6.IN17
+entrada[3] => Mux0.IN16
+entrada[3] => Mux1.IN16
+entrada[3] => Mux2.IN16
+entrada[3] => Mux3.IN16
+entrada[3] => Mux4.IN16
+entrada[3] => Mux5.IN16
+entrada[3] => Mux6.IN16
+saida[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+saida[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+saida[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+saida[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sinalizador|datapath:DPath|registrador:Subindo
+reset => registro[0].ACLR
+reset => registro[1].ACLR
+clock => registro[0].CLK
+clock => registro[1].CLK
+load => registro.OUTPUTSELECT
+load => registro.OUTPUTSELECT
+enable => registro[1].ENA
+enable => registro[0].ENA
+D[0] => registro.DATAB
+D[1] => registro.DATAB
+Q[0] <= registro[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= registro[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sinalizador|datapath:DPath|registrador:Descendo
+reset => registro[0].ACLR
+reset => registro[1].ACLR
+clock => registro[0].CLK
+clock => registro[1].CLK
+load => registro.OUTPUTSELECT
+load => registro.OUTPUTSELECT
+enable => registro[1].ENA
+enable => registro[0].ENA
+D[0] => registro.DATAB
+D[1] => registro.DATAB
+Q[0] <= registro[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= registro[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sinalizador|controladora:Ctrl
+RESET => state~3.DATAIN
+CLOCK => state~1.DATAIN
+Fio_Maior => next_state.s4.OUTPUTSELECT
+Fio_Maior => next_state.s3.IN1
+Fio_Maior => next_state.s3.OUTPUTSELECT
+Fio_Maior => next_state.s2.DATAA
+Fio_Igual => next_state.s3.IN0
+Fio_Menor => next_state.s3.IN1
+Fio_Menor => next_state.s3.DATAA
+Fio_Menor => next_state.s4.DATAA
+Fio_Load_E <= Fio_Atualizar.DB_MAX_OUTPUT_PORT_TYPE
+Fio_Reset_MA <= Fio_Reset_MA.DB_MAX_OUTPUT_PORT_TYPE
+Fio_Descendo <= Fio_Descendo.DB_MAX_OUTPUT_PORT_TYPE
+Fio_Subindo <= Fio_Subindo.DB_MAX_OUTPUT_PORT_TYPE
+Fio_Atualizar <= Fio_Atualizar.DB_MAX_OUTPUT_PORT_TYPE
+
+
