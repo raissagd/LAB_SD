@@ -9,10 +9,10 @@ Fio_Igual => next_state.s3.IN0
 Fio_Menor => next_state.s3.IN1
 Fio_Menor => next_state.s3.DATAA
 Fio_Menor => next_state.s4.DATAA
-Fio_Load_E <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Fio_Load_E <= Fio_Atualizar.DB_MAX_OUTPUT_PORT_TYPE
 Fio_Reset_MA <= Fio_Reset_MA.DB_MAX_OUTPUT_PORT_TYPE
-Fio_Descendo <= Fio_Descendo$latch.DB_MAX_OUTPUT_PORT_TYPE
-Fio_Subindo <= Fio_Subindo$latch.DB_MAX_OUTPUT_PORT_TYPE
+Fio_Descendo <= Fio_Descendo.DB_MAX_OUTPUT_PORT_TYPE
+Fio_Subindo <= Fio_Subindo.DB_MAX_OUTPUT_PORT_TYPE
 Fio_Atualizar <= Fio_Atualizar.DB_MAX_OUTPUT_PORT_TYPE
 
 

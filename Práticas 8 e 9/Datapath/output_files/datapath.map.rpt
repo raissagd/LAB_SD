@@ -1,6 +1,6 @@
 Analysis & Synthesis report for datapath
-Fri Oct 27 21:43:46 2023
-Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Sat Oct 28 00:18:50 2023
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -15,10 +15,11 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   7. Analysis & Synthesis Resource Utilization by Entity
   8. State Machine - |controladora|state
   9. User-Specified and Inferred Latches
- 10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -44,15 +45,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Oct 27 21:43:46 2023           ;
-; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Analysis & Synthesis Status        ; Successful - Sat Oct 28 00:18:50 2023           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; datapath                                        ;
 ; Top-level Entity Name              ; controladora                                    ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 14                                              ;
-;     Total combinational functions  ; 13                                              ;
-;     Dedicated logic registers      ; 5                                               ;
-; Total registers                    ; 5                                               ;
+; Total logic elements               ; 10                                              ;
+;     Total combinational functions  ; 9                                               ;
+;     Dedicated logic registers      ; 4                                               ;
+; Total registers                    ; 4                                               ;
 ; Total pins                         ; 10                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
@@ -152,18 +153,18 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 16     ;
+; Number detected on machine ; 8      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                         ; Library ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------+---------+
-; ../Controladora/controladora.vhd ; yes             ; User VHDL File  ; C:/Hermes/MRP/pratica 8/Tudo-20231027T235831Z-001/Tudo/Controladora/controladora.vhd ;         ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                       ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
+; ../Controladora/controladora.vhd ; yes             ; User VHDL File  ; C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Controladora/controladora.vhd ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------+
@@ -171,28 +172,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------+
 ; Resource                                    ; Usage    ;
 +---------------------------------------------+----------+
-; Estimated Total logic elements              ; 14       ;
+; Estimated Total logic elements              ; 10       ;
 ;                                             ;          ;
-; Total combinational functions               ; 13       ;
+; Total combinational functions               ; 9        ;
 ; Logic element usage by number of LUT inputs ;          ;
 ;     -- 4 input functions                    ; 3        ;
-;     -- 3 input functions                    ; 8        ;
+;     -- 3 input functions                    ; 4        ;
 ;     -- <=2 input functions                  ; 2        ;
 ;                                             ;          ;
 ; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 13       ;
+;     -- normal mode                          ; 9        ;
 ;     -- arithmetic mode                      ; 0        ;
 ;                                             ;          ;
-; Total registers                             ; 5        ;
-;     -- Dedicated logic registers            ; 5        ;
+; Total registers                             ; 4        ;
+;     -- Dedicated logic registers            ; 4        ;
 ;     -- I/O registers                        ; 0        ;
 ;                                             ;          ;
 ; I/O pins                                    ; 10       ;
 ; Embedded Multiplier 9-bit elements          ; 0        ;
 ; Maximum fan-out node                        ; state.s1 ;
-; Maximum fan-out                             ; 9        ;
-; Total fan-out                               ; 58       ;
-; Average fan-out                             ; 2.07     ;
+; Maximum fan-out                             ; 7        ;
+; Total fan-out                               ; 44       ;
+; Average fan-out                             ; 1.91     ;
 +---------------------------------------------+----------+
 
 
@@ -201,7 +202,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |controladora              ; 13 (13)           ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 10   ; 0            ; |controladora       ; work         ;
+; |controladora              ; 9 (9)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 10   ; 0            ; |controladora       ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -225,15 +226,22 @@ Encoding Type:  One-Hot
 +----------------------------------------------------+---------------------+------------------------+
 ; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
 +----------------------------------------------------+---------------------+------------------------+
-; Fio_Descendo$latch                                 ; state.s1            ; yes                    ;
-; Fio_Subindo$latch                                  ; state.s1            ; yes                    ;
-; next_state.s1_161                                  ; GND                 ; yes                    ;
-; next_state.s2_151                                  ; GND                 ; yes                    ;
-; next_state.s4_131                                  ; GND                 ; yes                    ;
-; next_state.s3_141                                  ; GND                 ; yes                    ;
-; Number of user-specified and inferred latches = 6  ;                     ;                        ;
+; next_state.s1_144                                  ; GND                 ; yes                    ;
+; next_state.s3_124                                  ; GND                 ; yes                    ;
+; next_state.s2_134                                  ; GND                 ; yes                    ;
+; Number of user-specified and inferred latches = 3  ;                     ;                        ;
 +----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; state.s4                              ; Lost fanout        ;
+; Total Number of Removed Registers = 1 ;                    ;
++---------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -241,10 +249,10 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 5     ;
+; Total registers                              ; 4     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 5     ;
+; Number of registers using Asynchronous Clear ; 4     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -273,60 +281,53 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 32-bit Analysis & Synthesis
+Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Oct 27 21:43:45 2023
+    Info: Processing started: Sat Oct 28 00:18:48 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off datapath -c datapath
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 2 design units, including 1 entities, in source file /hermes/mrp/pratica 8/tudo-20231027t235831z-001/tudo/regw/registrador.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/acer/downloads/lab sd/práticas 8 e 9/regw/registrador.vhd
     Info (12022): Found design unit 1: registrador-RTL
     Info (12023): Found entity 1: registrador
-Info (12021): Found 2 design units, including 1 entities, in source file /hermes/mrp/pratica 8/tudo-20231027t235831z-001/tudo/reg_ma/mean_4_clocks.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/acer/downloads/lab sd/práticas 8 e 9/reg_ma/mean_4_clocks.vhd
     Info (12022): Found design unit 1: mean_4_clocks-arch
     Info (12023): Found entity 1: mean_4_clocks
-Info (12021): Found 2 design units, including 1 entities, in source file /hermes/mrp/pratica 8/tudo-20231027t235831z-001/tudo/comparador/comparador.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/acer/downloads/lab sd/práticas 8 e 9/comparador/comparador.vhd
     Info (12022): Found design unit 1: comparador-estrutural
     Info (12023): Found entity 1: comparador
-Info (12021): Found 2 design units, including 1 entities, in source file /hermes/mrp/pratica 8/tudo-20231027t235831z-001/tudo/bcd_7seg/bcd_7seg.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/acer/downloads/lab sd/práticas 8 e 9/bcd_7seg/bcd_7seg.vhd
     Info (12022): Found design unit 1: Bcd_7seg-with_select_bcd7seg
     Info (12023): Found entity 1: Bcd_7seg
 Info (12021): Found 2 design units, including 1 entities, in source file datapath.vhd
     Info (12022): Found design unit 1: datapath-arch
     Info (12023): Found entity 1: datapath
-Info (12021): Found 2 design units, including 1 entities, in source file /hermes/mrp/pratica 8/tudo-20231027t235831z-001/tudo/controladora/controladora.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/acer/downloads/lab sd/práticas 8 e 9/controladora/controladora.vhd
     Info (12022): Found design unit 1: controladora-rtl
     Info (12023): Found entity 1: controladora
-Info (12021): Found 2 design units, including 1 entities, in source file /hermes/mrp/pratica 8/tudo-20231027t235831z-001/tudo/controladora/tb_controladora.vhd
-    Info (12022): Found design unit 1: tb_controladora-sim
+Info (12021): Found 2 design units, including 1 entities, in source file /users/acer/downloads/lab sd/práticas 8 e 9/controladora/tb_controladora.vhd
+    Info (12022): Found design unit 1: tb_controladora-teste
     Info (12023): Found entity 1: tb_controladora
 Info (12127): Elaborating entity "controladora" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at controladora.vhd(9): used implicit default value for signal "Fio_Load_E" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10492): VHDL Process Statement warning at controladora.vhd(38): signal "Fio_Maior" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controladora.vhd(40): signal "Fio_Menor" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controladora.vhd(42): signal "Fio_Igual" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at controladora.vhd(25): inferring latch(es) for signal or variable "next_state", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at controladora.vhd(25): inferring latch(es) for signal or variable "Fio_Descendo", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at controladora.vhd(25): inferring latch(es) for signal or variable "Fio_Subindo", which holds its previous value in one or more paths through the process
-Warning (10492): VHDL Process Statement warning at controladora.vhd(73): signal "state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Info (10041): Inferred latch for "Fio_Subindo" at controladora.vhd(25)
-Info (10041): Inferred latch for "Fio_Descendo" at controladora.vhd(25)
-Info (10041): Inferred latch for "next_state.s4" at controladora.vhd(25)
-Info (10041): Inferred latch for "next_state.s3" at controladora.vhd(25)
-Info (10041): Inferred latch for "next_state.s2" at controladora.vhd(25)
-Info (10041): Inferred latch for "next_state.s1" at controladora.vhd(25)
-Info (10041): Inferred latch for "next_state.s0" at controladora.vhd(25)
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "Fio_Load_E" is stuck at GND
+Warning (10492): VHDL Process Statement warning at controladora.vhd(41): signal "Fio_Maior" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controladora.vhd(43): signal "Fio_Menor" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controladora.vhd(45): signal "Fio_Igual" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at controladora.vhd(22): inferring latch(es) for signal or variable "next_state", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "next_state.s4" at controladora.vhd(22)
+Info (10041): Inferred latch for "next_state.s3" at controladora.vhd(22)
+Info (10041): Inferred latch for "next_state.s2" at controladora.vhd(22)
+Info (10041): Inferred latch for "next_state.s1" at controladora.vhd(22)
+Info (10041): Inferred latch for "next_state.s0" at controladora.vhd(22)
+Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 28 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 23 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 5 output pins
-    Info (21061): Implemented 18 logic cells
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 406 megabytes
-    Info: Processing ended: Fri Oct 27 21:43:46 2023
-    Info: Elapsed time: 00:00:01
+    Info (21061): Implemented 13 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4639 megabytes
+    Info: Processing ended: Sat Oct 28 00:18:50 2023
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 
