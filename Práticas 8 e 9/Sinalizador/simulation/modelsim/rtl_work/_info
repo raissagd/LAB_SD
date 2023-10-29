@@ -2,78 +2,290 @@ m255
 K3
 13
 cModel Technology
-Z0 dC:\Users\dudah\OneDrive\Área de Trabalho\UFMG\Lab Sistemas Digitais\Pratica8e9\LAB_SD\Práticas 8 e 9\Sinalizador\simulation\modelsim
-Emean_4_clocks
-Z1 w1698507978
-Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
-Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
-Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z5 dC:\Users\dudah\OneDrive\Área de Trabalho\UFMG\Lab Sistemas Digitais\Pratica8e9\LAB_SD\Práticas 8 e 9\Sinalizador\simulation\modelsim
-Z6 8C:/Users/dudah/OneDrive/Área de Trabalho/UFMG/Lab Sistemas Digitais/Pratica8e9/LAB_SD/Práticas 8 e 9/Reg_MA/mean_4_clocks.vhd
-Z7 FC:/Users/dudah/OneDrive/Área de Trabalho/UFMG/Lab Sistemas Digitais/Pratica8e9/LAB_SD/Práticas 8 e 9/Reg_MA/mean_4_clocks.vhd
+Z0 dC:\Users\Acer\Downloads\LAB SD\Práticas 8 e 9\Sinalizador\simulation\modelsim
+Ebcd_7seg
+Z1 w1698436816
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\Acer\Downloads\LAB SD\Práticas 8 e 9\Sinalizador\simulation\modelsim
+Z5 8C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/BCD_7seg/BCD_7seg.vhd
+Z6 FC:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/BCD_7seg/BCD_7seg.vhd
 l0
-L5
-V]c8n30J?OJaFU9^G1fF3Z2
-Z8 OV;C;10.1d;51
+L4
+V`o6UecCXXcKXh[NWIfEzD0
+Z7 OV;C;10.1d;51
 31
-Z9 !s108 1698508487.226000
-Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/dudah/OneDrive/Área de Trabalho/UFMG/Lab Sistemas Digitais/Pratica8e9/LAB_SD/Práticas 8 e 9/Reg_MA/mean_4_clocks.vhd|
-Z11 !s107 C:/Users/dudah/OneDrive/Área de Trabalho/UFMG/Lab Sistemas Digitais/Pratica8e9/LAB_SD/Práticas 8 e 9/Reg_MA/mean_4_clocks.vhd|
-Z12 o-93 -work work -O0
-Z13 tExplicit 1
-!s100 iJe4M<:WggVYIA^YGL4gH0
+Z8 !s108 1698611901.546000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/BCD_7seg/BCD_7seg.vhd|
+Z10 !s107 C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/BCD_7seg/BCD_7seg.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 Mj?kZhT<CDN2m7femMXLG1
 !i10b 1
-Aarch
+Awith_select_bcd7seg
 R2
 R3
-R4
-DEx4 work 13 mean_4_clocks 0 22 ]c8n30J?OJaFU9^G1fF3Z2
-l16
-L15
-V8bB@O5?nUi;TEmUMWI3W[2
-R8
+DEx4 work 8 bcd_7seg 0 22 `o6UecCXXcKXh[NWIfEzD0
+l12
+L11
+V68SOUlK];EB9_6D`f82`R3
+R7
 31
+R8
 R9
 R10
 R11
 R12
-R13
-!s100 EdP0_Q9>345;6F[YAbNnT1
+!s100 m5lPj[nI>=i7UWd9WO7_L0
 !i10b 1
-Etb_mean_4_clocks
-Z14 w1698508207
+Ecomparador
+Z13 w1698436818
+Z14 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
 R2
 R3
 R4
-R5
-Z15 8C:/Users/dudah/OneDrive/Área de Trabalho/UFMG/Lab Sistemas Digitais/Pratica8e9/LAB_SD/Práticas 8 e 9/Sinalizador/../Reg_MA/tb_mean_4_clocks.vhd
-Z16 FC:/Users/dudah/OneDrive/Área de Trabalho/UFMG/Lab Sistemas Digitais/Pratica8e9/LAB_SD/Práticas 8 e 9/Sinalizador/../Reg_MA/tb_mean_4_clocks.vhd
+Z15 8C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Comparador/comparador.vhd
+Z16 FC:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Comparador/comparador.vhd
+l0
+L5
+V2SVz;cgSKcI93>7[N_mN83
+R7
+31
+Z17 !s108 1698611901.606000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Comparador/comparador.vhd|
+Z19 !s107 C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Comparador/comparador.vhd|
+R11
+R12
+!s100 U7=S=;GWUYdm;nU6RYGa81
+!i10b 1
+Aestrutural
+R14
+R2
+R3
+DEx4 work 10 comparador 0 22 2SVz;cgSKcI93>7[N_mN83
+l22
+L21
+VDB8Zi9]`<iCC[e^7l@PH60
+R7
+31
+R17
+R18
+R19
+R11
+R12
+!s100 ZRRaTPbHcAQFYOZ[9kD^02
+!i10b 1
+Econtroladora
+Z20 w1698603598
+R2
+R3
+R4
+Z21 8C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Controladora/controladora.vhd
+Z22 FC:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Controladora/controladora.vhd
+l0
+L4
+V4UP=_zmNe:fm`9JAQ<jLl0
+R7
+31
+Z23 !s108 1698611901.676000
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Controladora/controladora.vhd|
+Z25 !s107 C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Controladora/controladora.vhd|
+R11
+R12
+!s100 Dd_miXdKTl4nPZ:<1VdzZ3
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 12 controladora 0 22 4UP=_zmNe:fm`9JAQ<jLl0
+l21
+L13
+V;9_Q[0S6jQVC];?ENk;2B0
+R7
+31
+R23
+R24
+R25
+R11
+R12
+!s100 [oabRkI>R1b1:0GjPQ4ho3
+!i10b 1
+Edatapath
+R20
+R2
+R3
+R4
+Z26 8C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Datapath/datapath.vhd
+Z27 FC:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Datapath/datapath.vhd
+l0
+L4
+Vg;6g_A01:O5KzJJf0RX<P2
+R7
+31
+Z28 !s108 1698611901.751000
+Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Datapath/datapath.vhd|
+Z30 !s107 C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Datapath/datapath.vhd|
+R11
+R12
+!s100 CbY]7`6^n=i4Vk5cGSn?l1
+!i10b 1
+Aarch
+R2
+R3
+DEx4 work 8 datapath 0 22 g;6g_A01:O5KzJJf0RX<P2
+l72
+L22
+V7n=REH>YbF`WdhP?FdXGC2
+R7
+31
+R28
+R29
+R30
+R11
+R12
+!s100 fi8TTUl8DUXoX7UY?KUjW2
+!i10b 1
+Emean_4_clocks
+Z31 w1698611695
+R14
+R2
+R3
+R4
+Z32 8C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Reg_MA/mean_4_clocks.vhd
+Z33 FC:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Reg_MA/mean_4_clocks.vhd
+l0
+L5
+V]c8n30J?OJaFU9^G1fF3Z2
+R7
+31
+Z34 !s108 1698611901.816000
+Z35 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Reg_MA/mean_4_clocks.vhd|
+Z36 !s107 C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Reg_MA/mean_4_clocks.vhd|
+R11
+R12
+!s100 iJe4M<:WggVYIA^YGL4gH0
+!i10b 1
+Aarch
+R14
+R2
+R3
+DEx4 work 13 mean_4_clocks 0 22 ]c8n30J?OJaFU9^G1fF3Z2
+l16
+L15
+V_1n8NG5FkdEh8a1gG3mfT1
+R7
+31
+R34
+R35
+R36
+R11
+R12
+!s100 Vbe^:L2bcA]U>eboUE2>o0
+!i10b 1
+Eregistrador
+R20
+R2
+R3
+R4
+Z37 8C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/RegW/registrador.vhd
+Z38 FC:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/RegW/registrador.vhd
+l0
+L4
+Ve03K9zTQTizUa?P>m=^e42
+R7
+31
+Z39 !s108 1698611901.881000
+Z40 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/RegW/registrador.vhd|
+Z41 !s107 C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/RegW/registrador.vhd|
+R11
+R12
+!s100 Qf<FFf_J5a@KIV7eH:IE>2
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 11 registrador 0 22 e03K9zTQTizUa?P>m=^e42
+l20
+L18
+ViUSm92=O2ZX7HdDXT2jnc3
+R7
+31
+R39
+R40
+R41
+R11
+R12
+!s100 eDcCSk3I0DDb?1e]SSX:80
+!i10b 1
+Esinalizador
+Z42 w1698463847
+R2
+R3
+R4
+Z43 8C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Sinalizador/sinalizador.vhd
+Z44 FC:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Sinalizador/sinalizador.vhd
+l0
+L4
+VS=ijhXQM7S7R9Y8jc=kc>1
+R7
+31
+Z45 !s108 1698611901.946000
+Z46 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Sinalizador/sinalizador.vhd|
+Z47 !s107 C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Sinalizador/sinalizador.vhd|
+R11
+R12
+!s100 Uj`g;OUQB`UZ;9ocjQA0Z3
+!i10b 1
+Aarch
+R2
+R3
+DEx4 work 11 sinalizador 0 22 S=ijhXQM7S7R9Y8jc=kc>1
+l47
+L15
+VH]98fQ?4OI7N]Sk2?EKRO1
+R7
+31
+R45
+R46
+R47
+R11
+R12
+!s100 T?2bg>J9ZDTGKOo1?NV]M3
+!i10b 1
+Etb_mean_4_clocks
+Z48 w1698611672
+R14
+R2
+R3
+R4
+Z49 8C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Sinalizador/../Reg_MA/tb_mean_4_clocks.vhd
+Z50 FC:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Sinalizador/../Reg_MA/tb_mean_4_clocks.vhd
 l0
 L5
 VEVD0_RmhoWMRCGcMdO9HJ1
 !s100 d0ozn8Af9l[1nhJE?gWh40
-R8
+R7
 31
 !i10b 1
-Z17 !s108 1698508487.349000
-Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/dudah/OneDrive/Área de Trabalho/UFMG/Lab Sistemas Digitais/Pratica8e9/LAB_SD/Práticas 8 e 9/Sinalizador/../Reg_MA/tb_mean_4_clocks.vhd|
-Z19 !s107 C:/Users/dudah/OneDrive/Área de Trabalho/UFMG/Lab Sistemas Digitais/Pratica8e9/LAB_SD/Práticas 8 e 9/Sinalizador/../Reg_MA/tb_mean_4_clocks.vhd|
+Z51 !s108 1698611902.006000
+Z52 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Sinalizador/../Reg_MA/tb_mean_4_clocks.vhd|
+Z53 !s107 C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Sinalizador/../Reg_MA/tb_mean_4_clocks.vhd|
+R11
 R12
-R13
 Ateste
+R14
 R2
 R3
-R4
 DEx4 work 16 tb_mean_4_clocks 0 22 EVD0_RmhoWMRCGcMdO9HJ1
-l26
+l28
 L8
-VY5GI0gR?dFK7QTOUCOkjA0
-!s100 G^Bec5VFH7O_iNTiRc8YS1
-R8
+Vf@f;iJIz2]dK`SXUBWT?n0
+!s100 OQUIEFKYZP6j=ngQDi]C:2
+R7
 31
 !i10b 1
-R17
-R18
-R19
+R51
+R52
+R53
+R11
 R12
-R13

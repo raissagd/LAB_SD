@@ -1,16 +1,45 @@
-# Reading D:/Quartus/modelsim_ase/tcl/vsim/pref.tcl 
+# Reading D:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
 # do sinalizador_run_msim_rtl_vhdl.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
 # vlib rtl_work
 # vmap work rtl_work
-# Copying D:\Quartus\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Copying D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
-# ** Warning: Copied D:\Quartus\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+# ** Warning: Copied D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vcom -93 -work work {C:/Users/dudah/OneDrive/Área de Trabalho/UFMG/Lab Sistemas Digitais/Pratica8e9/LAB_SD/Práticas 8 e 9/Reg_MA/mean_4_clocks.vhd}
+# vcom -93 -work work {C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/BCD_7seg/BCD_7seg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Bcd_7seg
+# -- Compiling architecture with_select_bcd7seg of Bcd_7seg
+# vcom -93 -work work {C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Comparador/comparador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity comparador
+# -- Compiling architecture estrutural of comparador
+# vcom -93 -work work {C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Controladora/controladora.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controladora
+# -- Compiling architecture rtl of controladora
+# vcom -93 -work work {C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Datapath/datapath.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity datapath
+# -- Compiling architecture arch of datapath
+# vcom -93 -work work {C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Reg_MA/mean_4_clocks.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -18,8 +47,22 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity mean_4_clocks
 # -- Compiling architecture arch of mean_4_clocks
+# vcom -93 -work work {C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/RegW/registrador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity registrador
+# -- Compiling architecture RTL of registrador
+# vcom -93 -work work {C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Sinalizador/sinalizador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Sinalizador
+# -- Compiling architecture arch of Sinalizador
 # 
-# vcom -93 -work work {C:/Users/dudah/OneDrive/Área de Trabalho/UFMG/Lab Sistemas Digitais/Pratica8e9/LAB_SD/Práticas 8 e 9/Sinalizador/../Reg_MA/tb_mean_4_clocks.vhd}
+# vcom -93 -work work {C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Sinalizador/../Reg_MA/tb_mean_4_clocks.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
