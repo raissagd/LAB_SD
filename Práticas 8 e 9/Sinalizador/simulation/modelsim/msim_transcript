@@ -10,6 +10,14 @@
 # ** Warning: Copied D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
+# vcom -93 -work work {C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Reg_MA/mean_4_clocks.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mean_4_clocks
+# -- Compiling architecture arch of mean_4_clocks
 # vcom -93 -work work {C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/BCD_7seg/BCD_7seg.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
@@ -25,13 +33,6 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity comparador
 # -- Compiling architecture estrutural of comparador
-# vcom -93 -work work {C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Controladora/controladora.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity controladora
-# -- Compiling architecture rtl of controladora
 # vcom -93 -work work {C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Datapath/datapath.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
@@ -39,14 +40,13 @@
 # -- Loading package std_logic_1164
 # -- Compiling entity datapath
 # -- Compiling architecture arch of datapath
-# vcom -93 -work work {C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Reg_MA/mean_4_clocks.vhd}
+# vcom -93 -work work {C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Controladora/controladora.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity mean_4_clocks
-# -- Compiling architecture arch of mean_4_clocks
+# -- Compiling entity controladora
+# -- Compiling architecture rtl of controladora
 # vcom -93 -work work {C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/RegW/registrador.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
@@ -62,27 +62,48 @@
 # -- Compiling entity Sinalizador
 # -- Compiling architecture arch of Sinalizador
 # 
-# vcom -93 -work work {C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Sinalizador/../Reg_MA/tb_mean_4_clocks.vhd}
+# vcom -93 -work work {C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Sinalizador/tb_sinalizador.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity tb_mean_4_clocks
-# -- Compiling architecture teste of tb_mean_4_clocks
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity tb_sinalizador
+# -- Compiling architecture sim of tb_sinalizador
 # 
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  tb_mean_4_clocks
-# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_mean_4_clocks 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  tb_sinalizador
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_sinalizador 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.tb_sinalizador(sim)
+# Loading work.sinalizador(arch)
+# Loading work.datapath(arch)
 # Loading ieee.numeric_std(body)
-# Loading work.tb_mean_4_clocks(teste)
 # Loading work.mean_4_clocks(arch)
+# Loading work.comparador(estrutural)
+# Loading work.registrador(rtl)
+# Loading work.bcd_7seg(with_select_bcd7seg)
+# Loading work.controladora(rtl)
 # 
 # add wave *
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
-# run 100 ns
+# run 40 ns
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sinalizador/UUT/DPath/Comparador_instance
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sinalizador/UUT/DPath/Comparador_instance
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sinalizador/UUT/DPath/Comparador_instance
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_sinalizador/UUT/DPath/Comparador_instance
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_sinalizador/UUT/DPath/Comparador_instance
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_sinalizador/UUT/DPath/Comparador_instance

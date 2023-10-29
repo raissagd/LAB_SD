@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
--- DATE "10/29/2023 17:38:14"
+-- DATE "10/29/2023 18:08:41"
 
 -- 
 -- Device: Altera EP2C5T144C6 Package TQFP144
@@ -136,14 +136,14 @@ SIGNAL \Ctrl|Fio_Descendo~combout\ : std_logic;
 SIGNAL \DPath|BCD|Mux1~0_combout\ : std_logic;
 SIGNAL \DPath|BCD|Mux1~1_combout\ : std_logic;
 SIGNAL \DPath|BCD|Mux1~2_combout\ : std_logic;
-SIGNAL \DPath|Reg_MA|var2\ : std_logic_vector(3 DOWNTO 0);
-SIGNAL \DPath|Descendo|registro\ : std_logic_vector(1 DOWNTO 0);
-SIGNAL \DPath|Reg_MA|var4\ : std_logic_vector(3 DOWNTO 0);
-SIGNAL \DPath|Reg_MA|var3\ : std_logic_vector(3 DOWNTO 0);
-SIGNAL \DPath|Reg_MA|var1\ : std_logic_vector(3 DOWNTO 0);
 SIGNAL \DPath|Reg_E|registro\ : std_logic_vector(3 DOWNTO 0);
 SIGNAL \DPath|Subindo|registro\ : std_logic_vector(1 DOWNTO 0);
 SIGNAL \E~combout\ : std_logic_vector(3 DOWNTO 0);
+SIGNAL \DPath|Descendo|registro\ : std_logic_vector(1 DOWNTO 0);
+SIGNAL \DPath|Reg_MA|var3\ : std_logic_vector(3 DOWNTO 0);
+SIGNAL \DPath|Reg_MA|var4\ : std_logic_vector(3 DOWNTO 0);
+SIGNAL \DPath|Reg_MA|var2\ : std_logic_vector(3 DOWNTO 0);
+SIGNAL \DPath|Reg_MA|var1\ : std_logic_vector(3 DOWNTO 0);
 SIGNAL \DPath|Reg_MA|ALT_INV_OUTPUT[1]~2_combout\ : std_logic;
 
 BEGIN

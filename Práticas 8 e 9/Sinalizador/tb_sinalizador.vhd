@@ -10,30 +10,32 @@ architecture sim of tb_sinalizador is
     signal sim_RESET   : std_logic := '0';
     signal sim_E       : std_logic_vector(3 downto 0) := "0000";
     signal sim_CLOCK   : std_logic := '0';
-    signal sim_Subindo : std_logic;
-    signal sim_Descendo: std_logic;
-    signal sim_Display_7seg: std_logic_vector(6 downto 0);
+    signal sim_Subindo : std_logic_vector(1 downto 0);
+	 signal sim_Descendo : std_logic_vector(1 downto 0);
+	 signal sim_Display_7seg: std_logic_vector(6 downto 0);
 
     component sinalizador
-        port (
-            RESET   : in  std_logic;
-            E       : in  std_logic_vector(3 downto 0);
-            Subindo : out std_logic;
-            Descendo: out std_logic;
-            Display_7seg: out std_logic_vector(6 downto 0)
-        );
-    end component;
+    port (
+        RESET   : in  std_logic;
+        E       : in  std_logic_vector(3 downto 0);
+        Subindo : out std_logic_vector(1 downto 0);
+        Descendo: out std_logic_vector(1 downto 0);
+        Display_7seg: out std_logic_vector(6 downto 0);
+        CLOCK   : in  std_logic  -- Adicionado com base na entidade 'Sinalizador'
+    );
+	end component;
 
 begin
 
     UUT: sinalizador
-        port map(
-            RESET        => sim_RESET,
-            E            => sim_E,
-            Subindo      => sim_Subindo,
-            Descendo     => sim_Descendo,
-            Display_7seg => sim_Display_7seg
-        );
+    port map(
+        RESET        => sim_RESET,
+        E            => sim_E,
+        Subindo      => sim_Subindo,
+        Descendo     => sim_Descendo,
+        Display_7seg => sim_Display_7seg,
+        CLOCK        => sim_CLOCK  -- Adicionado aqui
+    );
 
     -- Clock generation process
     ClockProcess: process

@@ -1,10 +1,11 @@
 vendor_name = ModelSim
+source_file = 1, C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Reg_MA/mean_4_clocks.vhd
 source_file = 1, C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/BCD_7seg/BCD_7seg.vhd
 source_file = 1, C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Comparador/comparador.vhd
-source_file = 1, C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Controladora/controladora.vhd
 source_file = 1, C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Datapath/datapath.vhd
-source_file = 1, C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Reg_MA/mean_4_clocks.vhd
+source_file = 1, C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Controladora/controladora.vhd
 source_file = 1, C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/RegW/registrador.vhd
+source_file = 1, C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/RegW/flipFlopD.vhd
 source_file = 1, C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Sinalizador/sinalizador.vhd
 source_file = 1, C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Sinalizador/tb_sinalizador.vhd
 source_file = 1, C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Sinalizador/db/sinalizador.cbx.xml

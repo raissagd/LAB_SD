@@ -1,0 +1,75 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Acer\Downloads\LAB SD\teste controladora\simulation\modelsim
+Econtroladora
+Z1 w1698613187
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\Acer\Downloads\LAB SD\teste controladora\simulation\modelsim
+Z5 8C:/Users/Acer/Downloads/LAB SD/teste controladora/controladora.vhd
+Z6 FC:/Users/Acer/Downloads/LAB SD/teste controladora/controladora.vhd
+l0
+L4
+V4UP=_zmNe:fm`9JAQ<jLl0
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1698613286.442000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/LAB SD/teste controladora/controladora.vhd|
+Z10 !s107 C:/Users/Acer/Downloads/LAB SD/teste controladora/controladora.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 Dd_miXdKTl4nPZ:<1VdzZ3
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 12 controladora 0 22 4UP=_zmNe:fm`9JAQ<jLl0
+l21
+L13
+V;9_Q[0S6jQVC];?ENk;2B0
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 [oabRkI>R1b1:0GjPQ4ho3
+!i10b 1
+Etb_controladora
+Z13 w1698613226
+R2
+R3
+R4
+Z14 8C:/Users/Acer/Downloads/LAB SD/teste controladora/tb_controladora.vhd
+Z15 FC:/Users/Acer/Downloads/LAB SD/teste controladora/tb_controladora.vhd
+l0
+L4
+VJOdjWEigd3HffRK:5GK0Z0
+!s100 n<K5_C3=_dTEX9E840Ud@0
+R7
+31
+!i10b 1
+Z16 !s108 1698613286.502000
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/LAB SD/teste controladora/tb_controladora.vhd|
+Z18 !s107 C:/Users/Acer/Downloads/LAB SD/teste controladora/tb_controladora.vhd|
+R11
+R12
+Ateste
+R2
+R3
+DEx4 work 15 tb_controladora 0 22 JOdjWEigd3HffRK:5GK0Z0
+l22
+L7
+Vo?]GQkkd?foEYRT8;RCS<1
+!s100 XkViD]ZjQPD37=LQ=Sknh3
+R7
+31
+!i10b 1
+R16
+R17
+R18
+R11
+R12
