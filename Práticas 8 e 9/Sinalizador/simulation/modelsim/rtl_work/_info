@@ -15,7 +15,7 @@ L4
 V`o6UecCXXcKXh[NWIfEzD0
 Z7 OV;C;10.1d;51
 31
-Z8 !s108 1698613729.825000
+Z8 !s108 1698947862.454000
 Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/BCD_7seg/BCD_7seg.vhd|
 Z10 !s107 C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/BCD_7seg/BCD_7seg.vhd|
 Z11 o-93 -work work -O0
@@ -51,7 +51,7 @@ L5
 V2SVz;cgSKcI93>7[N_mN83
 R7
 31
-Z17 !s108 1698613729.881000
+Z17 !s108 1698947862.515000
 Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Comparador/comparador.vhd|
 Z19 !s107 C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Comparador/comparador.vhd|
 R11
@@ -76,7 +76,7 @@ R12
 !s100 ZRRaTPbHcAQFYOZ[9kD^02
 !i10b 1
 Econtroladora
-Z20 w1698613187
+Z20 w1698946661
 R2
 R3
 R4
@@ -87,7 +87,7 @@ L4
 V4UP=_zmNe:fm`9JAQ<jLl0
 R7
 31
-Z23 !s108 1698613730.001000
+Z23 !s108 1698947862.662000
 Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Controladora/controladora.vhd|
 Z25 !s107 C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Controladora/controladora.vhd|
 R11
@@ -98,9 +98,9 @@ Artl
 R2
 R3
 DEx4 work 12 controladora 0 22 4UP=_zmNe:fm`9JAQ<jLl0
-l21
+l17
 L13
-V;9_Q[0S6jQVC];?ENk;2B0
+VA5J<[4<D:aKe@8Mn;TEW=0
 R7
 31
 R23
@@ -108,7 +108,7 @@ R24
 R25
 R11
 R12
-!s100 [oabRkI>R1b1:0GjPQ4ho3
+!s100 O?hoHkPdC3m<3LcNMEN4d3
 !i10b 1
 Edatapath
 Z26 w1698603598
@@ -122,7 +122,7 @@ L4
 Vg;6g_A01:O5KzJJf0RX<P2
 R7
 31
-Z29 !s108 1698613729.945000
+Z29 !s108 1698947862.602000
 Z30 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Datapath/datapath.vhd|
 Z31 !s107 C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Datapath/datapath.vhd|
 R11
@@ -158,7 +158,7 @@ L5
 V]c8n30J?OJaFU9^G1fF3Z2
 R7
 31
-Z35 !s108 1698613729.763000
+Z35 !s108 1698947862.361000
 Z36 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Reg_MA/mean_4_clocks.vhd|
 Z37 !s107 C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Reg_MA/mean_4_clocks.vhd|
 R11
@@ -183,20 +183,20 @@ R12
 !s100 Vbe^:L2bcA]U>eboUE2>o0
 !i10b 1
 Eregistrador
-R26
+Z38 w1698946467
 R2
 R3
 R4
-Z38 8C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/RegW/registrador.vhd
-Z39 FC:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/RegW/registrador.vhd
+Z39 8C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/RegW/registrador.vhd
+Z40 FC:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/RegW/registrador.vhd
 l0
 L4
 Ve03K9zTQTizUa?P>m=^e42
 R7
 31
-Z40 !s108 1698613730.057000
-Z41 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/RegW/registrador.vhd|
-Z42 !s107 C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/RegW/registrador.vhd|
+Z41 !s108 1698947862.720000
+Z42 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/RegW/registrador.vhd|
+Z43 !s107 C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/RegW/registrador.vhd|
 R11
 R12
 !s100 Qf<FFf_J5a@KIV7eH:IE>2
@@ -207,31 +207,31 @@ R3
 DEx4 work 11 registrador 0 22 e03K9zTQTizUa?P>m=^e42
 l20
 L18
-ViUSm92=O2ZX7HdDXT2jnc3
+Vf]MJYI<^eg0CY``P@d?^S0
 R7
 31
-R40
 R41
 R42
+R43
 R11
 R12
-!s100 eDcCSk3I0DDb?1e]SSX:80
+!s100 e<YYifR`8@4SDgB:gVmDT1
 !i10b 1
 Esinalizador
-Z43 w1698612592
+Z44 w1698947301
 R2
 R3
 R4
-Z44 8C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Sinalizador/sinalizador.vhd
-Z45 FC:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Sinalizador/sinalizador.vhd
+Z45 8C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Sinalizador/sinalizador.vhd
+Z46 FC:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Sinalizador/sinalizador.vhd
 l0
 L4
 VS=ijhXQM7S7R9Y8jc=kc>1
 R7
 31
-Z46 !s108 1698613730.113000
-Z47 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Sinalizador/sinalizador.vhd|
-Z48 !s107 C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Sinalizador/sinalizador.vhd|
+Z47 !s108 1698947862.806000
+Z48 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Sinalizador/sinalizador.vhd|
+Z49 !s107 C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Sinalizador/sinalizador.vhd|
 R11
 R12
 !s100 Uj`g;OUQB`UZ;9ocjQA0Z3
@@ -242,25 +242,25 @@ R3
 DEx4 work 11 sinalizador 0 22 S=ijhXQM7S7R9Y8jc=kc>1
 l47
 L15
-VH]98fQ?4OI7N]Sk2?EKRO1
+VEm29nKL?k`XQ4PRj_:H363
 R7
 31
-R46
 R47
 R48
+R49
 R11
 R12
-!s100 T?2bg>J9ZDTGKOo1?NV]M3
+!s100 <BC2FAA70UaccZ1N`=@5i1
 !i10b 1
 Etb_sinalizador
-Z49 w1698612341
-Z50 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
-Z51 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z50 w1698947801
+Z51 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z52 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
 R2
 R3
 R4
-Z52 8C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Sinalizador/tb_sinalizador.vhd
-Z53 FC:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Sinalizador/tb_sinalizador.vhd
+Z53 8C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Sinalizador/tb_sinalizador.vhd
+Z54 FC:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Sinalizador/tb_sinalizador.vhd
 l0
 L6
 VkU4DHL6boo@Ife`On:l]F3
@@ -268,26 +268,26 @@ VkU4DHL6boo@Ife`On:l]F3
 R7
 31
 !i10b 1
-Z54 !s108 1698613730.173000
-Z55 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Sinalizador/tb_sinalizador.vhd|
-Z56 !s107 C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Sinalizador/tb_sinalizador.vhd|
+Z55 !s108 1698947862.866000
+Z56 !s90 -reportprogress|300|-93|-work|work|C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Sinalizador/tb_sinalizador.vhd|
+Z57 !s107 C:/Users/Acer/Downloads/LAB SD/Práticas 8 e 9/Sinalizador/tb_sinalizador.vhd|
 R11
 R12
 Asim
-R50
 R51
+R52
 R2
 R3
 DEx4 work 14 tb_sinalizador 0 22 kU4DHL6boo@Ife`On:l]F3
 l28
 L9
-VzN8JZM]YfoBecIm?1WdaC2
-!s100 c0Vb;BcWaGEb4TVG_EM>a0
+VS5cTAA:R:Idb4iTFAl_4J0
+!s100 L:_57_ClImzXUjfJ361SU2
 R7
 31
 !i10b 1
-R54
 R55
 R56
+R57
 R11
 R12

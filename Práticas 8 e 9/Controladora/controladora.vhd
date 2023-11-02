@@ -11,17 +11,19 @@ entity controladora is
 end entity;
 
 architecture rtl of controladora is
-    -- Build an enumerated type for the state machine
-    type state_type is (s0, s1, s2, s3, s4);
-
-    -- Register to hold the current state
-    signal state   : state_type;
-    signal next_state   : state_type;
+    type state_type is (s0, s1, s2, s3, s4); -- State Machine States
+    signal state, next_state: state_type;    -- Current and Next state
 
 begin
-    process (state)
+    process (state, Fio_Maior, Fio_Menor, Fio_Igual)
     begin
         -- Default assignments
+        Fio_Load_E <= '0';
+        Fio_Reset_MA <= '0';
+        Fio_Atualizar <= '0';
+        Fio_Descendo <= '0';
+        Fio_Subindo <= '0';
+        
         case state is
             when s0 =>
                 next_state <= s1;
@@ -32,15 +34,14 @@ begin
                 Fio_Subindo <= '1';
 
             when s1 =>
-				    Fio_Load_E <= '0';
-					 Fio_Reset_MA <= '0';
-					 Fio_Atualizar <= '0';	
                 if Fio_Maior = '1' then
                     next_state <= s2;
                 elsif Fio_Menor = '1' then
                     next_state <= s3;
                 elsif Fio_Igual = '1' then
                     next_state <= s4;    
+                else
+                    next_state <= s1; -- Add a default state
                 end if;
 
             when s2 =>

@@ -44,33 +44,35 @@ begin
         sim_CLOCK <= not sim_CLOCK;
     end process ClockProcess;
 
-    -- Simulation process
     SimulationProcess: process
     begin
-        -- Reset is asserted
         sim_RESET <= '1';
-        wait for 20 ns;
+        wait for 10 ns;
 
-        -- Reset is deasserted
         sim_RESET <= '0';
-        wait for 20 ns;
+        wait for 10 ns;
 
-        -- Apply some sample input patterns
         sim_E <= "0001";
-        wait for 20 ns;
+        wait for 10 ns;
 
         sim_E <= "0010";
-        wait for 20 ns;
+        wait for 10 ns;
 
         sim_E <= "0100";
-        wait for 20 ns;
+        wait for 10 ns;
+		  
+		  sim_E <= "0110";
+		  wait for 10 ns;
 
         sim_E <= "1000";
-        wait for 20 ns;
+        wait for 10 ns;
+		  
+		  sim_E <= "0001";
+		  wait for 10 ns;
 
-        -- End simulation
+		  sim_E <= "0011";
+		  wait for 10 ns;
         wait;
     end process SimulationProcess;
 
 end sim;
-

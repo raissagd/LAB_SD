@@ -15,7 +15,7 @@ end Sinalizador;
 architecture arch of Sinalizador is
     signal Fio_Load_E, Fio_Reset_MA, Fio_Atualizar: std_logic;
     signal Fio_Maior, Fio_Igual, Fio_Menor: std_logic;
-    signal Fio_Descendo, Fio_Subindo: std_logic_vector(1 downto 0);
+    signal Fio_Descendo, Fio_Subindo: std_logic_vector(1 downto 0) := (others => '0');
     
     component datapath
         port (

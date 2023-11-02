@@ -20,4 +20,4 @@ vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii 
 add wave *
 view structure
 view signals
-run 40 ns
+run 50 ns

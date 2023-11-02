@@ -94,7 +94,7 @@
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
-# run 40 ns
+# run 50 ns
 # ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 #    Time: 0 ps  Iteration: 0  Instance: /tb_sinalizador/UUT/DPath/Comparador_instance
 # ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
